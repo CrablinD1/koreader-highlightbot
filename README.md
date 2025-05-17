@@ -1,5 +1,6 @@
 # koreader-highlightbot
-A KOReader plugin that sends your text highlights directly to a Telegram chat using a bot. Perfect for archiving, sharing, or syncing reading notes from your Kindle or other eInk devices.
+A KOReader plugin that sends your text highlights directly to a Telegram chat using a bot. 
+Perfect for archiving, sharing, or syncing reading notes from your Kindle or other eInk devices.
 
 ## ✨ Features
 
@@ -8,21 +9,21 @@ A KOReader plugin that sends your text highlights directly to a Telegram chat us
 - Works directly from KOReader's highlight menu
 
 ---
-
 ## 📷 Demo
+
 
 <table>
   <tr>
     <td><strong>KOReader Highlight Menu</strong></td>
   </tr>
   <tr>
-    <td><img src="screenshots/koreader.png" width="300"></td>
+    <td><img src="screenshots/koreader.png" width="500"></td>
   </tr>
   <tr>
     <td><strong>Telegram Message</strong></td>
   </tr>
   <tr>
-    <td><img src="screenshots/tg_message.png" width="300"></td>
+    <td><img src="screenshots/tg_message.png" width="500"></td>
   </tr>
 </table>
 
@@ -37,10 +38,12 @@ A KOReader plugin that sends your text highlights directly to a Telegram chat us
 2. **Configure Telegram credentials**
 
     Then open config.lua in a text editor and fill in your Telegram bot token and chat ID.
-    `return {
+    ```
+    return {
         token = "123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11",  -- your bot token
         chat_id = "123456789"                                 -- your Telegram user or group chat ID
-    }`
+    }
+    ``` 
 
 3. **Restart KOReader**
     
@@ -64,4 +67,4 @@ A KOReader plugin that sends your text highlights directly to a Telegram chat us
 - Then open this URL in your browser `https://api.telegram.org/bot<token>/getUpdates
 `(replace `token` with your actual token):
 - You will see a JSON response. Look for a line like this: `"chat": { "id": 123456789, ... }`
-- That id is your chat_id — copy it into your config.lua
+- That id is your chat_id - copy it into your config.lua
